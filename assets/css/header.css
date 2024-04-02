@@ -178,3 +178,58 @@
     height: 32px;
     border-radius: 50%;
 }
+
+.right-section-mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    visibility: hidden;
+    width: 0;
+    margin-right: -165px;
+}
+
+.right-section-mobile div{
+    margin-left: 15px;
+}
+
+.right-section-mobile div:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .right-section-mobile{
+        width: 150px;
+    }
+}
+
+@media (max-width: 600px){
+    .left-section{
+        position: relative;
+    }
+
+    .youtube-logo{
+        position: absolute;
+        left: 15px;
+    }
+    
+    .hamburger-menu{
+        visibility: hidden;
+    }
+
+    .middle-section{
+        visibility: hidden;
+    }
+
+    .right-section {
+        visibility: hidden;
+    }
+
+    .right-section-mobile{
+        visibility: visible;
+        width: fit-content;
+    }
+
+    .middle-section{
+        width: 0;
+    }
+  }

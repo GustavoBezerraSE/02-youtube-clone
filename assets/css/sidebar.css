@@ -32,3 +32,9 @@
     background-color: rgb(243, 243, 243);
     cursor: pointer;
 }
+
+@media (max-width: 500px){
+    .sidebar{
+        visibility: hidden;
+    }
+  }
